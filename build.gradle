@@ -1,0 +1,40 @@
+apply plugin: 'com.android.library'
+//apply plugin: 'com.novoda.bintray-release'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        minSdkVersion 8
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+
+    dependencies {
+        compile 'com.android.support:support-annotations:+'
+    }
+
+//    publish {
+//        bintrayUser = project.BINTRAY_USER
+//        bintrayKey = project.BINTRAY_API_KEY
+//        dryRun = false;
+//        groupId = 'com.kennyc'
+//        artifactId = 'multistateview'
+//        version = project.VERSION
+//        website = 'https://github.com/Kennyc1012/MultiStateView'
+//        description = 'Android View that displays different content based on its state'
+//        issueTracker = "${website}/issues"
+//        repository = "${website}.git"
+//    }
+}
